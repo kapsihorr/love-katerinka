@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+#counterText {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #ff4d6d;
+  color: white;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Сердечки */
+.heart {
+  position: absolute;
+  color: #ff2d55;
+  font-size: 24px;
+  animation: fly 2s linear forwards;
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
